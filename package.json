@@ -1,0 +1,30 @@
+{
+  "name": "@polydemo/design-source",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run build -w @juristr/tusky-design",
+    "typecheck": "npm run typecheck -w @juristr/tusky-design"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.17",
+    "@types/node": "20.19.9",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "ajv": "^8.20.0",
+    "prettier": "^2.6.2",
+    "tailwindcss": "^4.1.17",
+    "typescript": "~5.9.2",
+    "vite": "^7.0.0",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}
